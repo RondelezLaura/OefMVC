@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lijst</title>
+</head>
+<body>
+    <h1>Lid:</h1>
+    <ul>
+        @foreach (Lid lid in ViewBag.Leden)
+        {
+            <li>@lid</li>
+        }
+    </ul>
+</body>
+</html>

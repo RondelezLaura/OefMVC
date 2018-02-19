@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JSLijst</title>
+</head>
+<body>
+    <h1>Bands + members</h1>
+    <p id="bandsMembers"></p>
+    
+    <script>
+        // JSON to text, probs not correct
+        $.ajax({
+            url: "",
+            success: function (result) {
+                $("#bandsMembers").html(result);
+            }
+        });
+
+    </script>
+
+</body>
+</html>

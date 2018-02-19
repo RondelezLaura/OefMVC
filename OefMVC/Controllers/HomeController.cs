@@ -32,5 +32,19 @@ namespace OefMVC.Controllers
             ViewBag.Band = band;
             return View();
         }
+
+        public JsonResult JSLijst()
+        {
+            List<Band> bands = new List<Band>
+            {
+                new Band("one", 1956, new List<Lid>{
+                    new Lid("bla", 50, "male", true),
+                    new Lid("bleh", 24, "male", false)}),
+                new Band("two", 2005, new List<Lid>{
+                    new Lid("bloep", 45, "female", true),
+                    new Lid("bliep", 56, "female", true)})
+            };
+            return Json(bands);
+        }
     }
 }
