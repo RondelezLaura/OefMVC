@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Lijst";
+}
+
+<h2>Lijst</h2>
+
+@ foreach(Band b in ViewBag.Bands){
+<ul>
+    <li>@b.Naam</li>
+    <li>@b.Jaar</li>
+</ul>
+}
+
+<a >Lijst met leden</a>
